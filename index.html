@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Brandon L. | Web Developer</title>
+	<meta name="description" content="My (Brandon's) web development portfolio. Short and sweet, without skimping on quality (Just like my work)">
+	<meta name="author" content="Brandon Lovegrove">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<!-- Imported CSS -->
+	<link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="./css/main.min.css">
+
+	<link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+	<div id="fullpage">
+		<div class="section" id="title-section">
+			<div class="title-fullpage d-flex flex-column justify-content-center">
+				<div class="flex-container">
+					<h1 class="display-1 font-weight-bold text-center d-none d-lg-block px-5 pt-3">
+						Brandon Lovegrove.
+					</h1>
+					<h1 class="font-weight-bold text-center d-lg-none px-1 mt-2">
+						Brandon Lovegrove.
+					</h1>
+
+					<p class="text-center h3 mb-4 mb-md-0">
+						( <a href="https://www.linkedin.com/in/brandon-lovegrove-5ab4181a0/" target="_blank">
+							<img src="images/linkedin.png" class="pb-2 pb-sm-0">
+						</a> / 
+						<a href="https://www.facebook.com/blovegrove" target="_blank">
+							<img src="images/facebook.png" class="pb-2 pb-sm-0">
+						</a> )
+					</p>
+
+					<div class="text-center">
+						<img class="img-fluid my-5" src="./images/profile.png" alt="Profile picture of Brandon Lovegrove (me)">
+					</div>
+
+					<div class="d-none d-md-block px-5">
+						<h2 class="h3 text-center mt-4">Straightforward. Engaging. Effective.</h2>
+						<h3 class="h4 text-center">Just like my websites.</h3>
+					</div>
+					<div class="d-md-none px-2">
+						<h2 class="h5 text-center mt-4">Straightforward. Engaging. Effective.</h2>
+						<h3 class="h6 text-center">Just like my websites.</h3>
+					</div>
+				</div>
+				<nav class="navbar navbar-light fixed-bottom mb-3">
+					<section class="arrow-bounce text-center w-100">
+						<!-- <a href="#Examples"> -->
+							<span></span>
+							<text>Read more about Me</text>
+						<!-- </a> -->
+					</section>
+				</nav>
+			</div>
+		</div>
+		<div class="section" id="gallery-section">
+
+			<h3 class="text-center mb-5">
+				Hi, Nice to meet you.
+			</h3>
+
+			<blockquote class="blockquote pb-5">
+				<p class="mb-0 px-2 text-center" style="line-height: 1.8;">
+					Since my web development journey started <date id="SinceBeginning"></date> years ago, I've done<br />
+					everything from conceptualisation to the finished product and future enhancement.<br />
+					I'm exceptionally passionate about all things World Wide Web,<br />
+					and am constantly looking for ways to improve myself and my methods.
+				</p>
+			</blockquote>
+			
+			<!-- Saves me updating the date every year. Subtracts year I started from current year and updates with that. -->
+			<script>var SinceBeginning = (new Date().getFullYear() - 2017); document.getElementById("SinceBeginning").innerHTML = SinceBeginning;</script>
+
+			<h2 class="display-4 text-center my-5 d-none d-md-block">Some memorable projects : </h2>
+			<h2 class="h3 text-center py-4 d-block d-md-none">Some of my work : </h2>
+
+			<div class="container">
+				<div class="row">
+					<div class="p-0 col-12 col-md-6 col-xl-4 mx-auto">
+						<div class="card m-2 mx-4 mx-sm-2 rounded-lg">
+							<!-- TODO: Fill alt tag -->
+							<div class="site-thumb-overlay rounded-lg">
+								<blockquote class="blockquote mb-0 mt-lg-4 px-3">
+									<p class="mb-0 text-center text-light">
+										Construction company going above & beyond for their customers.
+									</p>
+								</blockquote>
+								<a href="https://addvaluerenovations.co.nz" target="_blank" class="btn btn-lg btn-outline-primary rounded-lg text-light mb-lg-4">
+									Visit Site
+								</a>
+							</div>
+							<img src="images/add-value-thumb.png" class="card-img-top" alt="">
+						</div>
+					</div>
+
+					<div class="p-0 col-12 col-md-6 col-xl-4 mx-auto rounded-lg">
+						<div class="card m-2 mx-4 mx-sm-2">
+							<!-- TODO: Fill alt tag -->
+							<div class="site-thumb-overlay rounded-lg">
+								<blockquote class="blockquote mb-0 mt-lg-4 px-3">
+									<p class="mb-0 text-center text-light">
+										Fast-growing Plumbers tackling appartment residential & more.
+									</p>
+								</blockquote>
+								<a href="https://addvaluerenovations.co.nz" target="_blank" class="btn btn-lg btn-outline-primary rounded-lg text-light mb-lg-4">
+									Visit Site
+								</a>
+							</div>
+							<img src="images/plumb-first-thumb.jpg" class="card-img-top" alt="">
+						</div>
+					</div>
+
+					<div class="p-0 col-12 col-md-6 col-xl-4 mx-auto rounded-lg">
+						<div class="card m-2 mx-4 mx-sm-2 px-2 px-sm-0">
+							<!-- TODO: Fill alt tag -->
+							<img src="images/coming-soon-thumb.png" class="card-img-top" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="contact-section">
+			<div class="title-fullpage d-flex flex-column justify-content-center">
+				<div class="flex-container text-center">
+					<h1 class="display-3 font-weight-bold text-center d-none d-lg-block px-5">
+						Contact Me
+					</h1>
+					<h1 class="font-weight-bold text-center d-lg-none px-1 mt-2">
+						Contact Me
+					</h1>
+
+					<h3 class="mt-3 mx-2">You can get a hold of me via email, or via phone :</h3>
+
+					<div class="mt-5">
+						<a class="btn btn-lg btn-secondary mx-3" href="tel:0211863639">Phone Me</a>
+						<div class="d-md-none my-4"></div>
+						<a class="btn btn-lg btn-secondary mx-3" href="mailto:brandon@lovegrove.co.nz">Email Me</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

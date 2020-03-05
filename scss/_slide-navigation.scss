@@ -1,0 +1,67 @@
+#gallery-section {
+
+	button {
+		-webkit-appearance: none;
+		// background: transparent;
+		background-color: $color-offwhite; // whitesmoke HTML color, with added opacity
+		border: 0;
+		outline: 0;
+
+		z-index: 999;
+	}
+
+	svg {
+		padding: 5px;
+	}
+
+	.arrow {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		margin-top: -45px;
+		// margin-left: -35px;
+		width: 70px;
+		height: 90px;
+	}
+
+	.left {
+		left: 0;
+		border-radius: 0 10px 10px 0;
+	}
+
+	.right {
+		right: 0;
+		border-radius: 10px 0 0 10px;
+	}
+
+	// .left:focus polyline,
+	.left:hover polyline {
+		stroke-width: 3;
+	}
+
+	.left:active polyline, .right:active polyline {
+		stroke-width: 6;
+		transition: all 100ms ease-in-out;
+	}
+
+	// .right:focus polyline,
+	.right:hover polyline {
+		stroke-width: 3;
+	}
+
+	polyline {
+		transition: all 250ms ease-in-out;
+	}
+
+	.fp-slidesNav {
+		display: flex;
+		justify-content: center;
+		bottom: 0;
+		
+		ul {
+			background-color: $color-offwhite;
+			border-radius: 10px 10px 0 0;
+		}
+	}
+
+}

@@ -1,0 +1,41 @@
+.arrow-bounce {
+	// a {
+		// border: none;
+		// outline: none;
+
+		text {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: -50px;
+
+			color: black;
+		}
+
+		span {
+			position: absolute;
+			top: -30px;
+			left: 50%;
+			width: 24px;
+			height: 24px;
+			margin-left: -12px;
+			border-left: 1px solid black;
+			border-bottom: 1px solid black;
+			transform: rotate(-45deg);
+			animation: ScrollArrowSingleBounce 2s infinite;
+			box-sizing: border-box;
+		}
+
+		@keyframes ScrollArrowSingleBounce {
+			0% {
+				transform: rotate(-45deg) translate(0, 0);
+			}
+			20% {
+				transform: rotate(-45deg) translate(-10px, 10px);
+			}
+			40% {
+				transform: rotate(-45deg) translate(0, 0);
+			}
+		}
+	// }
+}

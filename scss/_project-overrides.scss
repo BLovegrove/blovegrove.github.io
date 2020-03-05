@@ -1,0 +1,66 @@
+// main: './main.scss'
+
+// Generic overrides that effect whole page
+
+body {
+	max-width: 100%;
+}
+
+a {
+	outline: none;
+}
+
+.section {
+
+	&:not(:first-child) {
+		padding-top: $margin-page-top;
+	}
+	padding-bottom: $margin-page-bottom;
+
+	@include respond-below(md) {
+
+		.fp-tableCell {
+			vertical-align: top!important;
+		}
+		.title-fullpage {
+			justify-content: start!important;
+		}
+	}
+}
+
+// ID based overrides
+
+#title-section {
+
+	padding: 0;
+	min-height: 100vh;
+	background-color: whitesmoke;
+
+	img {
+		max-width: 300px;
+	}
+
+	nav {
+		background-color: whitesmoke;
+		position: absolute;
+		bottom: 0;
+	}
+
+	@include respond-below(sm) {
+		img {
+			max-width: 190px;
+			margin-top: 5px!important;
+			margin-bottom: 0px!important;
+		}
+	}
+
+}
+
+#about-section {
+	background-color: $color-offwhite;
+}
+
+#gallery-section {
+
+	background-color: $color-offwhite;
+}
